@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Admin</title>
+
+  <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+  <link rel="stylesheet" href="__ROOT__/static/admin/css/bootstrap.css">
+
+  <link rel="stylesheet" href="__ROOT__/static/admin/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="__ROOT__/static/admin/css/style.css">
+
+  <!--[if lt IE 9]>
+
+    <script src="js/ie/respond.min.js"></script>
+
+    <script src="js/ie/html5.js"></script>
+
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- header -->
+
+  <header id="header" class="navbar bg bg-black">
+
+    <a href="index.html" class="btn btn-link pull-right"><i class="icon-question icon-xlarge text-default"></i></a>
+
+    <a class="navbar-brand" href="index.html">Wh's Room</a>
+
+  </header>
+
+  <!-- / header -->
+
+  <section id="content">
+
+    <div class="main padder">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-offset-4 m-t-large">
+
+          <section class="panel">
+
+            <header class="panel-heading text-center">
+
+              登录
+
+            </header>
+
+            <form action="{:url('index/login')}" class="padder" method="post">
+
+              <div class="block">
+
+                <label class="control-label">用户名</label>
+
+               <!--  <input type="email" placeholder="test@example.com" class="form-control"> -->
+                <input type="text" placeholder="test@example.com" class="form-control" name="name">
+
+              </div>
+
+              <div class="block">
+
+                <label class="control-label">密码</label>
+
+                <input type="password" id="inputPassword" placeholder="Password" class="form-control" name="pass">
+
+              </div>
+
+              <div class="checkbox">
+
+                <!-- <label>
+
+                  <input type="checkbox"> Keep me logged in
+
+                </label> -->
+
+              </div>
+
+              <a href="#" class="pull-right m-t-mini"><small></small></a>
+
+              <button type="submit" class="btn btn-info">登录</button>
+              <button type="reset" class="btn btn-danger">重置</button>
+
+              <div class="line line-dashed"></div>
+
+              <div class="line line-dashed"></div>
+
+            </form>
+
+          </section>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- footer -->
+
+  <footer id="footer">
+
+    <div class="text-center padder clearfix">
+
+      <p>
+
+        <small>&copy; first 2013, Mobile first web app framework base on Bootstrap</small><br><br>
+
+        <a href="#" class="btn btn-mini btn-circle btn-twitter"><i class="icon-twitter"></i></a>
+
+        <a href="#" class="btn btn-mini btn-circle btn-facebook"><i class="icon-facebook"></i></a>
+
+        <a href="#" class="btn btn-mini btn-circle btn-gplus"><i class="icon-google-plus"></i></a>
+
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- / footer -->
+
+	<script src="__ROOT__/static/admin/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+
+  <script src="__ROOT__/static/admin/js/bootstrap.js"></script>
+
+  <!-- app -->
+
+  <script src="__ROOT__/static/admin/js/app.js"></script>
+
+  <script src="__ROOT__/static/admin/js/app.plugin.js"></script>
+
+  <script src="__ROOT__/static/admin/js/app.data.js"></script>
+
+</body>
+
+</html>

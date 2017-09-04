@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>王昊主页</title>
+	<style>
+
+		* {
+  			margin: 0;
+  			padding: 0;
+			background-color:snow;
+		}
+
+		#bigest{
+			width:100%;
+		}
+		#logo{
+			width:130px;
+			height:130px;
+			border-radius:65px;
+			border:2px solid #CCC;
+			overflow:hidden;
+			margin:0 auto;
+		}
+		#div2{
+			width:88%;
+			margin:0 auto;
+		}
+		#sel{
+			width:100%;
+			height:50px;
+			margin-top:5px;
+		}
+		.selname {
+  			color: #000;
+  			border-color: #000;
+  			overflow: hidden;
+  			position: relative;
+  			height:90%;
+		}
+		.selname:before, .selname:after {
+  			content: "";
+  			position: absolute;
+  			z-index: 1;
+  			background-color: #4B8BF5;
+  			width: 100%;
+  			height: 0;
+  			left: 0;
+  			-webkit-transition: all .25s;
+  			transition: all .25s;
+		}
+		.selname:before {
+  			bottom: 50%;
+		}
+		.selname:after {
+ 			top: 50%;
+		}
+		.selname:hover {
+  			color: #000;
+		}
+		.selname:hover:before, .selname:hover:after {
+  			height: 50%;
+		}
+		.selname {
+			width:15%;
+  			margin: 1px 8px;
+  			padding: 1px 20px;
+  			border-radius: 10px;
+  			border: 2px solid;
+  			font: 16px 'Microsoft yahei', sans-serif;
+  			text-transform: uppercase;
+  			background: none;
+  			outline: none;
+  			cursor: pointer;
+  			-webkit-transition: all .5s;
+  			transition: all .5s;
+		}
+		#imgscr{
+			width:88%;
+			height:400px;
+			margin:0 auto;
+		}
+		.imggive{
+			float:left;
+			width:9%;
+			height:100%;
+			font-family:华文彩云;
+			font-size:50px;
+			line-height:400px;
+			text-align:center;
+			cursor:pointer;
+		}
+		.imgmid{
+			width:80%;
+			float:left;
+			height:100%;
+			margin:3px;
+		}
+		.content{
+			width:88%;
+			/*background-color:#F0F0F0;*/
+			margin:0 auto;
+		}
+		.condiv{
+			width:90%;
+			height:200px;
+			border:1px solid #000;
+			margin:0 auto;
+		}
+		.contit{
+			width:100%;
+			height:20%;
+			background-color:#4B8BF5;
+			color:#FFF;
+			font-size:16px;
+			font-weight:bold;
+			line-height:35px;
+			text-align:center;
+		}
+		.context{
+			width:100%;
+			height:80%;
+			overflow:hidden;
+		}
+		#footer{
+			height:50px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 最外围大div -->
+	<div id="bigest">
+		<!-- logo -->
+		<div id="logo">
+			<img src="__ROOT__/static/images/logo.png" alt="加载中" style="width:100%;height:100%;">
+		</div><br/>
+		<!-- 选项卡 -->
+		<div id="div2">
+			<div id="sel">
+				<a href="{:url('index/index')}"><button class="selname" title="首页">首页</button></a>
+				<a href="{:url('index/write')}"><button class="selname" title="随笔">随笔</button></a>
+				<button class="selname" title="首页">首页</button>
+				<button class="selname" title="首页">首页</button>
+				<button class="selname" title="首页">首页</button>
+				<button class="selname" title="首页">首页</button>
+			</div>
+		</div><br/>
+		<!-- 改内容 -->
+		<div id="frame">
+		<!-- 轮播图 -->
+		<div id="imgscr">
+			<div class="imggive"><</div>
+			<div class="imgmid">
+				<img src="__ROOT__/static/images/img1.jpg" alt="加载中" style="width:100%; height:100%;">				
+			</div>
+			<div class="imggive">></div>
+		</div><br/>
+		<!-- 正式内容 -->
+		<div class="content"><br/>
+			<!-- 内容div -->
+			<div class="condiv">
+				<div class="contit">
+					我是一个内容标题
+				</div>
+				<div class="context">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+			</div><br/>
+		</div>
+		</div>
+		<!-- 脚 -->
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
